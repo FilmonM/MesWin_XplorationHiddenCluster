@@ -1,0 +1,88 @@
+<style>
+body {
+  font: 10px sans-serif;
+}
+  
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: url(#grad);
+}
+
+.bar:hover {
+  fill: lightgrey ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Css for the buttons */
+
+.button rect {
+  
+  fill: #FFFFFF;
+  stroke:  #FFFFFF; 
+  stroke-width: 2px;
+
+    
+}
+
+.button rect.active {
+    
+  fill: #BDBCB3; 
+  stroke: #000000;
+  stroke-width: 2px;
+
+}
+
+.button text {
+    
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  fill: #ED1411;
+  pointer-events: none;
+  text-anchor: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+    
+}
+
+</style>
